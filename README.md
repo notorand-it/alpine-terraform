@@ -24,6 +24,4 @@ docker build --file ./Dockerfile.tfenv -t alpine_tfenv
 The resulting image is about 14 MB in size + the size of the optional terraform binary (about 60 MB extra).  
 
 Unluckily, Alpine linux images doesn't ship with `bash` and uses `wget` instead of  `curl`.  
-Those two packages are required by `tfenv` to work properly and need to be installed explicitly by the docker file.
----
-[VR]
+Those two packages are required by `tfenv` to work properly and need to be installed explicitly by the docker file.  
